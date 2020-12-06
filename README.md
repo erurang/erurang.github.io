@@ -29,5 +29,5 @@ WEB </br>-- HTML : HTML에 대하여 정리하였습니다. ( 참고 네이버 �
 PROJECT </br>-- Wetube : nomadcorder의 유튜브 클론 프로젝트 입니다. </br>
         -- Kokoa : nomadcorder의 카카오톡 클론 프로젝트 입니다. </br>
         -- BoostCourse : 네이버 부스트코스 웹UI 에서 만든 프로젝트 입니다. </br>
-        -- ToDoList : nomadcorder의 클론 프로젝트 입니다. </br>
-        -- PaintJS : nomadcorder의 클론 프로젝트입니다. </br>
+        -- ToDoList : nomadcorder의 클론 프로젝트 입니다. [프로젝트 링크](https://erurang.github.io/toDoList/)</br>
+        -- PaintJS : nomadcorder의 클론 프로젝트입니다. [프로젝트 링크](http://erurang.github.io/paintjs/)</br>

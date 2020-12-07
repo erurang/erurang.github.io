@@ -40,3 +40,8 @@ node들을 Tree로 만들어서 관리하며
 
 DOM + CSSOM 를 병합해서 Render Tree가 완성됨.
 
+CSSOM에서 display : none 과 head tag의 내용들은 브라우저 화면에 표시가 되지 않기때문에
+
+DOM + CSSOM으로 렌더트리가 만들어지면 Tree에 생성이 되지않는다.
+
+이렇게 만들어진 RenderTree가 사용되고 적용되는 자세한 방법은 [이곳](https://erurang.github.io/web/2020/12/07/js-browser/)에 정리해 두었습니다.

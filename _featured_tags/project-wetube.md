@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: Mytube
-slug: Mytube
+slug: mytube
 category: project
 menu: false
 order: 1

@@ -91,6 +91,3 @@ http://endic.naver.com/란 서버에 위치한 endic.nhn파일은 query string�
 http://endic.naver.com/endic.nhn?docid=1232950
 http://endic.naver.com/endic.nhn?docid=1232690
 위 두 주소는 같은 URL이고 다른 URI라고 할 수 있다.
-(이건 좀 억지긴 하지만 개념을 이해하기 바란다.)
-
-출처: https://lambdaexp.tistory.com/39 [프로그래머 인생길..]

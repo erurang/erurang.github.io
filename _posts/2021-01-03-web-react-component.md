@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "React Component"
-subtitle: "React Component"
+title:  "React Component & jsx"
+subtitle: "React Component & jsx"
 categories: web
 tags: react
 comments: true
@@ -15,6 +15,25 @@ comments: true
 한 화면이 각각 나뉘어진 컴포넌트들의 집합체인데
 
 이 컴포넌트를 만드는 방법엔 2개가 있다.
+
+## 옛날방식 (지금은 쓰지않음.)
+
+```
+import React, { Component } from "react"
+
+class App extends Component {
+  const name = "erurang"
+
+  render() {
+    1. return React.createElement('태그명', { 태그의속성들 }, 태그에 들어갈 요소)
+    2. return <태그 속성>요소</태그>
+    3. return <태그>{ 이 안에 자바스크립트 문법이나 요소를 사용가능 }</태그>
+  }
+}
+```
+이런식으로 컴포넌트를 만들었다. jsx라는 문법덕에 우리는 2번처럼 표현을 할수있게 되었다.
+
+요새는 class와 function 으로 2가지 방법으로 만들수있다.
 
 ## Class - **상태**에 따라 컴포넌트가 업데이트 되야한다면 
 ```

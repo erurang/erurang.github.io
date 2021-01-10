@@ -46,7 +46,6 @@ export default App;
 ```
 `path=["/","home"]` 이렇게 주었는데 이 url로 들어오면 `<Home />`이라는 동일한 라우터로 연결한다는 뜻이다.
 
-
 home과 profile 컴포넌트는 다음과 같다.
 
 ```
@@ -143,3 +142,21 @@ const Home = (props) => {
 export default Home;
 ```
 
+클래스 방식에선 component={} 방식도 있었지만 이것은 매번 렌더될때마다
+
+새로운 컴포넌트를 만들기때문에 성능하락이 일어날수있다.
+
+그래서 
+```
+<Route path="/profile">
+          <Profile />
+        </Route>
+```
+
+이렇게 부모자식 형태로 쓰는것이 좋다.
+
+## HTML과 React Router의 차이점
+
+HTML에서 `a(href="")`로 라우터를 이동할때는 모든 페이지가 전체 재생성 되지만
+
+리액트라우터에서는 변화된 부분만 요소가 바뀌고 라우트가 변경된다.

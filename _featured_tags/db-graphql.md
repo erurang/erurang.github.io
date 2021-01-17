@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Grammar
-slug: grammar
-category: python
+title: GraphQL
+slug: graphql
+category: db
 menu: false
 order: 1
 ---

@@ -103,3 +103,8 @@ REST API를 GraphQL로 적용시킨후 내가 원하는 정보들만 요청하�
 
 <img width="963" alt="스크린샷 2021-01-18 오전 6 22 05" src="https://user-images.githubusercontent.com/56789064/104856343-7f6eeb80-5955-11eb-990d-4a4c95a2b75b.png">
 
+### graphQL은 형식일뿐!!
+
+프론트엔드나 백엔드에서 graphQL에 정보를 요청하고 답을 해주는 서비스가 필요한데..
+
+Apollo는 프론트와 백을 둘다 지원하는 아주 좋은 라이브러리이다.

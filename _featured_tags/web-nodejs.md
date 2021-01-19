@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: NodeJS
-slug: nodejs
+title: Base
+slug: base
 category: web
 menu: false
 order: 6

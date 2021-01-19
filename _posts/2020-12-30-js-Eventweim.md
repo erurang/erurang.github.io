@@ -3,7 +3,7 @@ layout: post
 title:  "버블링 캡처링 이벤트 위임"
 subtitle: "버블링 캡처링 이벤트 위임"
 categories: web
-tags: javascript
+tags: base
 comments: true
 
 ---

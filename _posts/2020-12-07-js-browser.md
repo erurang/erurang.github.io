@@ -3,7 +3,7 @@ layout: post
 title:  "Browser 구조와 API,DOM Tree "
 subtitle: "Browser 구조와 API,DOM Tree"
 categories: web
-tags: javascript
+tags: base
 comments: true
 
 ---

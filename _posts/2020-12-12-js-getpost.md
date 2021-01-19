@@ -3,7 +3,7 @@ layout: post
 title:  "http method"
 subtitle: "http method"
 categories: web
-tags: javascript
+tags: base
 comments: true
 
 ---

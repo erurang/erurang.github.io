@@ -15,6 +15,7 @@ comments: true
 1. 일단 App이 Hello컴포넌트를 그릴수 있도록 새 파일을 만들어주자.
 
 - App.js
+
 ```
 import React from "react";
 import Hello from "./Hello";
@@ -33,6 +34,7 @@ export default App;
 ```
 
 - Hello.js
+
 ```
 import React from "react";
 
@@ -65,7 +67,7 @@ defaultProps는 Props로 넘겨받은게 없을때 기본값을 정해주는것�
 
 그럼 props로 name을 넘겨받았기때문에 이제는 넘긴값이 올바로 나오는것을 볼수있다.
 
-2. 이번엔 children을 배워보자.
+1. 이번엔 children을 배워보자.
 
 Wrapper.js를 만들어주자
 

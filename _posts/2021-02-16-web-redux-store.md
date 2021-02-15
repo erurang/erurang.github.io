@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Redux는 왜 생겼을까?"
-subtitle: "Redux는 왜 생겼을까?"
+title:  "Store와 Reducer"
+subtitle: "Store와 Reducer"
 categories: web
 tags: redux
 comments: true

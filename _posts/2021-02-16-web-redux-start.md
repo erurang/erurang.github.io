@@ -3,7 +3,7 @@ layout: post
 title:  "Redux는 왜 생겼을까?"
 subtitle: "Redux는 왜 생겼을까?"
 categories: web
-tags: react
+tags: redux
 comments: true
 
 ---

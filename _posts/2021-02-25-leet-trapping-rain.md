@@ -3,7 +3,7 @@ layout: post
 title:  "빗물 트래핑(trapping-rain-water)"
 subtitle: "빗물 트래핑(trapping-rain-water)"
 categories: boj
-tags: string
+tags: bruteforce
 comments: true
 
 ---

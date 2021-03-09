@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Binary Search
-slug: binarysearch
+title: Tree
+slug: Tree
 category: boj
 menu: false
 order: 3

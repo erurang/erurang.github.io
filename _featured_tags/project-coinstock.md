@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Kokoa
-slug: Kokoa
+title: CoinStock
+slug: CoinStock
 category: project
 menu: false
 order: 2

@@ -72,5 +72,45 @@ html,css,js,img,css전처리기 변환을 대신해준다.
 웹팩은 그때그떄 필요할때 파일을 요청하여 사용하자는 철학을 가지고있다.
 
 
+## 웹팩설치
 
+```
+npm init
+npm i webpack wepback-cli
+```
 
+다음과 같이 폴더를 구성하기
+
+```
+./
+    index.html
+    src
+        --- index.js
+```
+
+pacakge.json scripts 수정
+
+```
+"scripts": {
+    "build": "webpack"
+}
+```
+
+webpack.config.js 생성
+
+```
+var path = require('path');
+
+module.exports = {
+  mode: 'none',
+  entry: './src/index.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist')
+  }
+};
+```
+
+`npm run build` 명령어로 빌드를 하면 src에 있는 index.js파일이 모든 의존성의 기본파일로 지정되고
+
+이 파일을 의존하는 모든 파일들을 한파일로 합쳐서 dist/main.js로 저장해준다.

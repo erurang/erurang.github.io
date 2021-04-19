@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Webpack의 사용이유와 기본셋팅"
-subtitle: "Webpack의 사용이유와 기본셋팅"
+title:  "Webpack의 4속성"
+subtitle: "Webpack의 4속성"
 categories: web
 tags: webpack
 comments: true

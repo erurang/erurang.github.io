@@ -3,7 +3,7 @@ layout: post
 title:  "Webpack의 사용이유와 기본셋팅"
 subtitle: "Webpack의 사용이유와 기본셋팅"
 categories: web
-tags: react
+tags: webpack
 comments: true
 
 ---

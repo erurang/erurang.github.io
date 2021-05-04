@@ -3,7 +3,7 @@ layout: post
 title:  "웹UI 프로젝트A-2"
 subtitle: "웹UI 프로젝트A-2"
 categories: project
-tags: boostcourse
+tags: uiux
 comments: true
 
 ---

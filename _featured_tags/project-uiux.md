@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: BoostCourse
-slug: boostcourse
+title: UI/UX
+slug: uiux
 category: project
 menu: false
 order: 3

@@ -3,7 +3,7 @@ layout: post
 title:  "프로모션 페이지"
 subtitle: "프로모션 페이지"
 categories: project
-tags: boostcourse
+tags: uiux
 comments: true
 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Stock
-slug: stock
+title: Kimp
+slug: kimp
 category: project
 menu: false
 order: 6

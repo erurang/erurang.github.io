@@ -2,8 +2,8 @@
 layout: post
 title:  "JS엔진의 이해"
 subtitle: "JS엔진의 이해"
-categories: web
-tags: javascript
+categories: antique
+tags: antique
 comments: true
 
 ---

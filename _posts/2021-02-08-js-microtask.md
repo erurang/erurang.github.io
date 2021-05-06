@@ -2,8 +2,8 @@
 layout: post
 title:  "웹의 전체적 구동과정"
 subtitle: "웹의 전체적 구동과정"
-categories: web
-tags: javascript
+categories: antique
+tags: antique
 comments: true
 
 ---

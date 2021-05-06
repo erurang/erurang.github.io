@@ -2,8 +2,8 @@
 layout: post
 title:  "가상클래스 & 가상요소"
 subtitle: "가상클래스 & 가상요소"
-categories: web
-tags: css
+categories: antique
+tags: antique
 comments: true
 
 ---

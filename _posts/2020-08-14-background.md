@@ -2,8 +2,8 @@
 layout: post
 title:  "속성 - background"
 subtitle: "속성 - background"
-categories: web
-tags: css
+categories: antique
+tags: antique
 comments: true
 
 ---

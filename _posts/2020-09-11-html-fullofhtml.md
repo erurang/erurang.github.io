@@ -2,8 +2,8 @@
 layout: post
 title:  "HTML 총정리"
 subtitle: "HTML 총정리"
-categories: web
-tags: html
+categories: antique
+tags: antique
 comments: true
 
 ---

@@ -2,8 +2,8 @@
 layout: post
 title:  "구체성"
 subtitle: "구체성"
-categories: web
-tags: css
+categories: antique
+tags: antique
 comments: true
 
 ---

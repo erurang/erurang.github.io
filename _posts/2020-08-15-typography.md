@@ -2,8 +2,8 @@
 layout: post
 title:  "Typography"
 subtitle: "Typography"
-categories: web
-tags: css
+categories: antique
+tags: antique
 comments: true
 
 ---

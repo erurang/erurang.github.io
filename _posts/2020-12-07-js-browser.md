@@ -2,8 +2,8 @@
 layout: post
 title:  "Browser 구조와 API,DOM Tree "
 subtitle: "Browser 구조와 API,DOM Tree"
-categories: web
-tags: base
+categories: antique
+tags: antique
 comments: true
 
 ---

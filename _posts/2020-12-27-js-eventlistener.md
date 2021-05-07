@@ -2,8 +2,8 @@
 layout: post
 title:  "querySelector / all을 사용할때"
 subtitle: "querySelector / all을 사용할때"
-categories: web
-tags: javascript
+categories: antique
+tags: antique
 comments: true
 
 ---

@@ -10,12 +10,16 @@ comments: true
 
 ### 원시타입
 
+```
 Number : 숫자
 String : 문자
 boolean : true or false
 null : 값은 값이지만 의미없는 값이 선언되있음 , gc에 의해서 메모리에서 삭제가능함
 undefined : 변수가 선언은 되었으나 값이없음
 symbol : 
+```
+
+원시타입에 대해선 이곳 [mutable immutable](https://erurang.github.io/web/2021/05/11/js-mutable/) 에 정리해두었다.
 
 ### 자바스크립트 변수 선언에는 3가지가 있다
 

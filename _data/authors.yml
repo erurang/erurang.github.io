@@ -8,7 +8,8 @@ erurang:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-   HTML CSS JavaScript TypeScript React Node.js
+   프론트엔드 기술스택에 관심이 있습니다.
+   HTML CSS Javascript Node.js React를 사용해본 경험이 있습니다.
 
   # This photo will be used in the about section
   picture:

@@ -2,8 +2,8 @@
 layout: post
 title:  "React의 SSR 프레임워크 Next.js"
 subtitle: "React의 SSR 프레임워크 Next.js"
-categories: web
-tags: react
+categories: antique
+tags: antique
 comments: true
 
 ---

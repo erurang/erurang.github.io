@@ -2,8 +2,8 @@
 layout: post
 title:  "React Props"
 subtitle: "React Props"
-categories: web
-tags: react
+categories: antique
+tags: antique
 comments: true
 
 ---

@@ -2,8 +2,8 @@
 layout: post
 title:  "TypeScript Generic"
 subtitle: "TypeScript Generic"
-categories: web
-tags: typescript
+categories: antique
+tags: antique
 comments: true
 
 ---

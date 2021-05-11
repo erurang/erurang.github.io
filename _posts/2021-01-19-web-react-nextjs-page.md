@@ -2,8 +2,8 @@
 layout: post
 title:  "Next.js Page"
 subtitle: "Next.js Page"
-categories: web
-tags: react
+categories: antique
+tags: antique
 comments: true
 
 ---

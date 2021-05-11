@@ -2,8 +2,8 @@
 layout: post
 title:  "React 시작하기"
 subtitle: "React 시작하기"
-categories: web
-tags: react
+categories: antique
+tags: antique
 comments: true
 
 ---

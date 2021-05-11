@@ -2,8 +2,8 @@
 layout: post
 title:  "React Component Render 순서를 보자"
 subtitle: "React Component Render 순서를 보자"
-categories: web
-tags: react
+categories: antique
+tags: antique
 comments: true
 
 ---

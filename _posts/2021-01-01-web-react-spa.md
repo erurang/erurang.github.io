@@ -3,7 +3,7 @@ layout: post
 title:  "SPA에 대해"
 subtitle: "SPA에 대해"
 categories: web
-tags: react
+tags: base
 comments: true
 
 ---

@@ -2,8 +2,8 @@
 layout: post
 title:  "React Component & jsx"
 subtitle: "React Component & jsx"
-categories: web
-tags: react
+categories: antique
+tags: antique
 comments: true
 
 ---

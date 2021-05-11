@@ -4,5 +4,5 @@ title: Typescript
 slug: typescript
 category: web
 menu: false
-order: 4
+order: 5
 ---

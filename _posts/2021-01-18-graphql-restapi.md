@@ -2,8 +2,8 @@
 layout: post
 title:  "REST API를 GraphQL로 가져오기"
 subtitle: "REST API를 GraphQL로 가져오기"
-categories: db
-tags: graphql
+categories: antique
+tags: antique
 comments: true
 
 ---

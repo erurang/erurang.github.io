@@ -2,8 +2,8 @@
 layout: post
 title:  "GraphQL Mutation"
 subtitle: "GraphQL Mutation"
-categories: db
-tags: graphql
+categories: antique
+tags: antique
 comments: true
 
 ---

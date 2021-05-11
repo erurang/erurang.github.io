@@ -2,8 +2,8 @@
 layout: post
 title:  "GraphQL을 쓰는 이유"
 subtitle: "GraphQL을 쓰는 이유"
-categories: db
-tags: graphql
+categories: antique
+tags: antique
 comments: true
 
 ---

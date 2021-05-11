@@ -2,8 +2,8 @@
 layout: post
 title:  "GraphQL 유저요청 데이터를 가져오기"
 subtitle: "GraphQL 유저요청 데이터를 가져오기"
-categories: db
-tags: graphql
+categories: antique
+tags: antique
 comments: true
 
 ---

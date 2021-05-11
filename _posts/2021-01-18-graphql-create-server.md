@@ -2,8 +2,8 @@
 layout: post
 title:  "GraphQL 서버만들기"
 subtitle: "GraphQL 서버만들기"
-categories: db
-tags: graphql
+categories: antique
+tags: antique
 comments: true
 
 ---

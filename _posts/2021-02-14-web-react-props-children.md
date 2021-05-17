@@ -2,8 +2,8 @@
 layout: post
 title:  "React Children과 Props"
 subtitle: "React Children과 Props"
-categories: web
-tags: react
+categories: antique
+tags: antique
 comments: true
 
 ---

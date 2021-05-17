@@ -2,8 +2,8 @@
 layout: post
 title:  "React Input"
 subtitle: "React Input"
-categories: web
-tags: react
+categories: antique
+tags: antique
 comments: true
 
 ---

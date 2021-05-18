@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Redux thunk"
-subtitle: "Redux thunk"
+title:  "Redux thunk 맛보기"
+subtitle: "Redux thunk 맛보기"
 categories: web
 tags: redux
 comments: true

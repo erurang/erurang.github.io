@@ -2,8 +2,8 @@
 layout: post
 title:  "http method"
 subtitle: "http method"
-categories: web
-tags: base
+categories: antique
+tags: antique
 comments: true
 
 ---

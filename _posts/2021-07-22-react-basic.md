@@ -2,7 +2,7 @@
 layout: post
 title:  "React의 기본 문법정리"
 subtitle: "React의 기본 문법정리"
-categories: react
+categories: web
 tags: react
 comments: true
 

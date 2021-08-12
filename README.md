@@ -40,7 +40,7 @@ WEB </br> -- BASE : 웹의 전반적인 기초적지식이라고 판단되는 �
 
 PROJECT </br>
         -- Mytube : 유튜브 클론 프로젝트에서 게시판/댓글/좋아요.. 등이 추가된 프로젝트입니다. </br>
-        -- CoinStock : 투표사이트입니다.. 만드는중 </br>
+        -- Instagram : 인스타그램 클론 프로젝트 </br>
         -- UI/UX : 네이버 부스트코스 웹UI 에서 만든 프로젝트와 UI/UX에 관해 다룹니다. </br>
         -- ToDoList : javascript todo 프로젝트 입니다. [프로젝트 링크](https://erurang.github.io/toDoList/)</br>
         -- Kimp : 김치프리미엄을 계산해주는 사이트입니다 </br>

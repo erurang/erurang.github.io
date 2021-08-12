@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: CoinStock
-slug: CoinStock
+title: Instagram
+slug: instagram
 category: project
 menu: false
 order: 2

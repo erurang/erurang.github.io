@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: PaintJS
-slug: paintjs
+title: Runner
+slug: runner
 category: project
 menu: false
 order: 6

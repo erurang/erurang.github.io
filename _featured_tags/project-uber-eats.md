@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: ToDoList
-slug: todolist
+title: UberEats
+slug: ubereats
 category: project
 menu: false
 order: 5

@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Kimp
-slug: kimp
+title: NFTMaru
+slug: NFTMaru
 category: project
 menu: false
 order: 2

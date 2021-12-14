@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: UI/UX
-slug: uiux
-category: project
+title: UI
+slug: ui
+category: web
 menu: false
 order: 3
 ---

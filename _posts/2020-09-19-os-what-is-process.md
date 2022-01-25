@@ -78,13 +78,30 @@ malloc을 통해서 메모리공간을 동적으로 할당하고 free를 통해 
 
 ## 콘텍스트 스위칭
 
-프로세스끼리 변경이 일어날때 변경하는 것을 Context Switching이라고 한다.
+하나의 프로세스가 CPU를 사용 중인 상태에서 다른 프로세스가 CPU를 사용하도록 하기 위해, 이전에 실행중인 Task(프로세스)의 상태(문맥, Register값들에 대한 정보 -> context)를 보관(저장)하고 새로운 Task(프로세스)의 Context정보로 교체(상태를 적재)하는 작업을 말한다.
+
+프로세스끼리 변경이 일어날때 변경하는 것을 Context Switching이라고 한다. 이것이 왜 필요할까?
+
+1. 컴퓨터가 매번 한번의 Task만 처리한다면?
+- 해당 Task가 끝날때 까지 다음 Task는 계속 대기상태임.
+- 반응속도가 매우느리고 사용하기 불편해짐
+
+2. 그렇다면 다양한 사람들이 동시에 사용하는것처럼 하려면?
+- 빠른속도로 task를 바꿔서 실시간처럼 보이게함. 
+- -> context switching의 등장
+
 
 프로세스를 변경시키면 우리는 변경되기 이전에 사용된 프로세스의 상태를 기억해야만 다시 프로세스가 변경되었을때 그 상태부터 다시 시작할수있다.
 
-그래서 프로세스가 변경이 일어났을때 상태를 기억하기위해 PCB를 이용해 저장하게된다
+현재 진행하고있는 Task(process,thread..)의 상태를 저장하기 때문에
+
+다음실행할 Task의 PCB를 읽어 Register에 적재하여 CPU가 이전에 진행했던 과정을 연속적으로 수행가능하다.
+
+프로세스가 변경이 일어났을때 상태를 기억하기위해 PCB를 이용해 저장하게된다
 
 ## PCB(process controll block)
+
+Task의 대부분 정보는 Register에 저장되어 PCB로 관리됨.
 
 PC(Program Counter)에 마지막까지 실행되고 있던 코드의 주소값을 기억한다.
 
@@ -98,6 +115,12 @@ PCB에는 아래와 같은 정보들이 저장된다.
 4. Scheduling info (스케줄링이 어떤것으로 이루어지고 있는지에 대한 정보..)
 5. Memory Info (메모리 사용상태..)
 6. accounting Info (cpu사용시간.. 계정정보..)
+
+## 잦은 Context Switching 은?
+
+Context Switching 시, Context Switching 을 수행하는 CPU 는 Cache 를 초기화하고 Memory Mapping 을 초기화하는 작업을 거치는 등 아무 작업도 하지 못하므로 잦은 Context Switching 은 성능 저하를 가져온다.  
+
+일반적으로 멀티 프로세스를 통해 PCB를 Context Switching 하는 것보다 멀티 쓰레드를 통해 TCB 를 Context Switching 하는 비용이 더 적다고 알려져있다.
 
 ## 프로세스간에 소통을 할때에 사용하는 IPC (Inter Process communication)
 

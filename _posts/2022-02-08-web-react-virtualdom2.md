@@ -415,4 +415,10 @@ export const render = (function() {
 
 이렇게 `render`함수는 클로져 공간을 통해서 이전의 상태를 기억하여 이전의 `dom`과 현재의 `dom`을 비교할수 있게되었다.
 
-리액트가 컴포넌트가 변경되었음을 비교를 할때의 기준은 불변성으로 판단하게 된다. 불변성에 대한 글은 [이곳](https://erurang.github.io/web/2021/05/06/js-immutability/)에 정리해두었다.
+리액트가 컴포넌트가 변경되었음을 비교를 할때의 기준은 불변성으로 판단하게 된다. 이 불변성은 얕은비교와 깊은비교로 나누는데
+
+리액트의 경우 얕은비교(shallow comparison)로 객체가 바뀌었는지 판단한다
+
+shallow Comparison에 대한 글은 [이곳](https://erurang.github.io/web/2021/05/06/js-spread2/)에 정리해두었다.
+
+불변성에 대한 글은 [이곳](https://erurang.github.io/web/2021/05/06/js-immutability/)에 정리해두었다.

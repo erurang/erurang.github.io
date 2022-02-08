@@ -10,15 +10,117 @@ comments: true
 
 ### 프로토타입은 무엇일까??
 
-자바스크립트는 프로토타입 기반 언어라고 불린다. 밑의 글을 보다보면 Class랑 무슨차인데? 하는 생각이 들것이다.
+자바스크립트는 프로토타입 기반 언어라고 불린다. 
 
-자바스크립트는 태생부터 클래스의 기능이 없다. (현재로 생기긴했음..) 그래서 클래스를 구현하기 위해서 프로토타입을 이용하여 구현했다.
+공통적으로 사용될만한 것을 상위객체에 선언하여 재활용을 가능하게 만든다. 즉 객체 간 상속관계를 가능하게 해준다.
 
-프로토타입을 언제쓰는가? new 생성자 를 통해서 클래스를 흉내낼수있음!
+### 예시 코드
 
-개발을 하다보면 기존기능을 가져와 확장해야하는 경우가 생긴다. 예를들어 user라는 객체에서 기능을 살짝만 더 추가한 다른 객체를 만들고싶다고 가정해보자.
+```
+const user1 = { name : 'js' }
 
-자바스크립트의 고유기능 프로토타입상속을 이용하면 가능하다.
+const user2 = { name : 'nm' }
+
+const user3 = { name : 'yw' }
+
+console.log(user1,user2,user3)
+
+```
+
+![스크린샷 2022-02-08 오후 5 42 35](https://user-images.githubusercontent.com/56789064/152949949-e2e1278f-2834-4502-81ce-36dba817a587.png)
+
+우리가 만든 오브젝트를 보면 `[[Prototype]]` 을 가지고있는걸 볼수있다. 이건 뭘까?
+
+```
+console.log(user1.toString())
+```
+
+![스크린샷 2022-02-08 오후 5 48 21](https://user-images.githubusercontent.com/56789064/152950907-1fe64301-c8be-42b6-925c-c2e00d76879a.png)
+
+확실히 이상하다. 우리 객체에는 `toString()` 이라는 메소드가 없는데 `[object object]`라는 결과가 출력된걸 알수있다.
+
+분명히 어느곳에 `toString()`이 선언되어있으니 이런 결과가 나오는것이 아닐까? 이것을 우리는 `prototype chaning` 이라고 한다.
+
+## prototype chaning
+
+모든 객체에는 `__proto__` 라고 하는 속성이 있다. 이 속성은 어떤 객체를 가르키고 있는데 바로 모든 객체들의 조상 `Object` 라고 하는 객체를 가르키고있다.
+
+![스크린샷 2022-02-08 오후 5 52 42](https://user-images.githubusercontent.com/56789064/152951643-c57767d0-74f8-4514-b567-d4ebcc06cea4.png)
+
+즉 `toString()` 이라는 메소드는 자바스크립트 최상위 `Object`에 선언되어 있는것이다.
+
+그런데 위에서 우리 `user1 user2 user3` 은 어떻게 `toString()`을 찾아갈까?
+
+자바스크립트 엔진은 현재 선언된 객체에서 `toString()` 메소드가 있는지 찾아보고, 
+
+있다면 메소드를 실행하고 , 없다면 객체가 가지고있는 `__proto__` 가 가르키고 있는 객체에 `toString()`이 있는지 찾아본다. 
+
+있다면 `__proto__` 내부의 `toString()` 메소드를 실행하고 `__proto__`에도 존재하지않으면 `undefined`를 실행하게 된다.
+
+**그렇다면 모든 객체에 있는 proto를 서로 연결시켜준다면 어떻게 될까?**
+
+## 객체를 __proto__로 연결해보자
+
+```
+const user1 = { name : 'js' , state : 'hungry'}
+
+const user2 = { name : 'nm' , age : 28 }
+
+const user3 = { name : 'yw' , smart : 'yes' }
+
+user1.__proto__ = user2
+
+console.log(user1.age)
+console.log(user1.smart)
+
+user2.__proto__ = user3
+
+console.log(user1.smart)
+```
+![스크린샷 2022-02-08 오후 6 11 39](https://user-images.githubusercontent.com/56789064/152954817-9af8ebdd-7094-4532-9fe5-29b9858e41d6.png)
+
+
+위에서 `user1.__proto__` 를 `user2`에 연결한 후에 `user1` 객체 내에는 존재하지않는 속성 `age`를 접근했다.
+
+`user1`속성에는 `age`가 없기때문에 `proto`를 통해 `user2`로 이동하고 `age`를 접근해 `28`이라는 숫자가 출력되는걸 볼수있다.
+
+`user1`의 속성에 `smart`도 없고 `user2`에도 없기때문에 결국엔 `undefined`가 출력되는걸 알수있다.
+
+다시 `proto`를 사용해 `user2 ~3`을 연결해주고 `smart`를 찾으면 프로토타입으로 체이닝된 `user3.smart`를 `user1`이 참조할수있는걸 볼수있다.
+
+## new로 객체를 생성하였을때 protoType
+
+```
+function Foo(name) {
+  this.name = name
+  
+  //
+  // this.__proto__ = Foo.prototype
+  //
+}
+
+const f = new Foo('erurang')
+
+console.log(f.name)
+
+Foo.prototype.state = 'hungry'
+
+console.log(f.state)
+```
+![스크린샷 2022-02-08 오후 6 33 15](https://user-images.githubusercontent.com/56789064/152958745-8ea08719-f713-4edb-b140-ba01105b5bdd.png)
+
+함수도 프로토타입을 가지고있다. `new`를 통해 생성한 객체에 `state`라는 속성을 만들어주었다. 
+
+`new`로 생성하는 순간에 함수내부적으로 `__proto__`는 `함수명.prototype`을 가르키게된다. 생성된 객체에는 `state`라는 속성이 없지만
+
+`f.state` 가 `Foo` 함수 프로토타입에 선언된 `state`속성을 쫒아가서 출력하게 되는것이다.
+
+## 정리
+
+ES6 에서 class를 구현할수있기때문에 proto로 상속관계를 만들어내는 경우는 줄어들었다. 하지만 proto가 어떤식으로 작동하는지는 알아두자.
+
+<!-- ### 프로토타입 링크와 체인
+<!-- 
 
 ### `__proto__`에 대해 알아보자. 이것은 어디서 나타난 아이일까??
 
@@ -38,12 +140,9 @@ let rabbit = {
 
 둘을 선언후에 실행해보면 animal과 rabbit에는 아래와같은 __proto__가 존재한다.
 
-![스크린샷 2021-05-03 오후 11 24 39](https://user-images.githubusercontent.com/56789064/116888705-bd72ef80-ac66-11eb-892d-0fd04d64b044.png)
+![스크린샷 2021-05-03 오후 11 24 39](https://user-images.githubusercontent.com/56789064/116888705-bd72ef80-ac66-11eb-892d-0fd04d64b044.png) -->
 
-
-### 프로토타입 링크와 체인
-
-```
+<!-- ```
 rabbit.proto = animal
 ```
 
@@ -131,4 +230,4 @@ Object.setPrototypeOf(rabbit, {}); // rabbit의 프로토타입을 {}으로 바�
 ```
 
 ![스크린샷 2021-05-04 오전 1 01 58](https://user-images.githubusercontent.com/56789064/116900975-55c3a100-ac74-11eb-9cbb-18451178890d.png)
-
+ -->

@@ -39,7 +39,7 @@ MongoDB(mongoose)
 
 JAVASCRIPT
 
-[유튜브](https://github.com/erurang/mytube/tree/9deb026c5d06030bb5859d71593184065ba55fa4) - NodeJs와 mongoose로 CRUD를 구현하였으며, Aws s3를 클라우드서비스로 사용하였습니다.
+[유튜브](https://github.com/erurang/mytube/tree/master) - NodeJs와 mongoose로 CRUD를 구현하였으며, Aws s3를 클라우드서비스로 사용하였습니다.
 
 REACT
 

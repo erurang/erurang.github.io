@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: MySQL
-slug: base
+slug: mysql
 category: db
 menu: false
 order: 2

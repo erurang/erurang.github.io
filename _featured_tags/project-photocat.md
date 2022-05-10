@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: PhotoCat
-slug: photocat
+slug: PhotoCat
 category: project
 menu: false
 order: 1

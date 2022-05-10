@@ -4,5 +4,5 @@ title: PhotoCat
 slug: photocat
 category: project
 menu: false
-order: 2
+order: 1
 ---

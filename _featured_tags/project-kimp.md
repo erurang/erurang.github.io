@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Kimp
-slug: kimp
+title: PhotoCat
+slug: photocat
 category: project
 menu: false
 order: 2

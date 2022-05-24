@@ -37,7 +37,7 @@ hello()
 
 ```
 "scripts": {
-    "build": "webpack",
+    "build": "webpack -w",
 },
 ```
 
@@ -293,6 +293,7 @@ module.exports = {
         compress: true, // 파일을 압축함
         hot : true, // 웹에 실시간으로 반영될 수 있게 도와줌 
         port : 5500, // 오픈할 포트
+        static : path.join(__dirname, "./build"), // html이 존재하는 파일경로
         proxy : { 
             // cors를 방지하기위한 api주소
             '/api' : 'http://localhost:3000'

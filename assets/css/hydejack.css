@@ -58,7 +58,8 @@
 }
 
 .markdown-body a {
-  background: #FFF9C4;
+  /* background: #FFF9C4; */
+  color : #DDB973
 }
 
 .markdown-body code,
@@ -89,7 +90,7 @@
 }
 
 .markdown-body code {
-  color: #E53A40;
+  color: #DDB973;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;

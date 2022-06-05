@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Debounce & Throttle"
-subtitle: "Debounce & Throttle"
+title:  "Debounce & Throttle "
+subtitle: "Debounce & Throttle "
 categories: web
 tags: javascript
 comments: true
@@ -117,4 +117,4 @@ const test = throttle(() => console.log('throttle test'),1000)
 
 `Throttle`은 적어도 `X` 밀리 초마다 실행을 하기를 원할때 사용을 하고,
 
-`Debouce는` 많은 이벤트가 발생해도 모두 무시한채, 마지막 이벤트 발생뒤 일정시간 후, 딱 한번 마지막으로 실행된 이벤트를 발생시키는 방법이다.
+`Debouce는` 많은 이벤트가 발생해도 모두 무시한채, 마지막 이벤트 발생뒤 일정시간 후, 딱 한번 마지막으로 실행된 이벤트를 발생시킬때 사용한다.

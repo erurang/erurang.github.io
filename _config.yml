@@ -80,6 +80,8 @@ paginate_path: "/page-:num/"
 #  Collections
 # -----------------------------------------------------------------------------
 
+future: true
+
 collections:
   featured_categories:
     permalink: /category/:name/

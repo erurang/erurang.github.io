@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Nextjs SSG 사용"
-subtitle: "Nextjs SSG 사용"
+title: "Nextjs SSG란?"
+subtitle: "Nextjs SSG란?"
 categories: web
 tags: nextjs
 comments: true

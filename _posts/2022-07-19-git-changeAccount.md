@@ -22,7 +22,7 @@ git config user.email
 
 <img width="352" alt="스크린샷 2022-07-19 오후 4 10 07" src="https://user-images.githubusercontent.com/56789064/179688501-d4974078-296c-45f6-bda5-bec9752e4fe6.png">
 
-현재는 내 회사계정으로 로그인이 되어있는 상태다. 이것을 내
+현재는 내 회사계정으로 로그인이 되어있는 상태다. 내 개인계정으로 바꿔보자.
 
 ## 로컬에 연결된 계정을 바꾼다
 
@@ -37,7 +37,7 @@ git config --global user.email 변경할 계정 이메일
 
 ![스크린샷 2022-07-19 오후 4 15 41](https://user-images.githubusercontent.com/56789064/179689583-d564c1e7-28c9-4732-88da-4c36f1ebce04.png)
 
-어 `push`가 거부되었다고한다. 이럴떄 github와 관련된 `keychain`을 삭제해줘야만 한다.
+`push`가 거부되었다고한다. `github`와 관련된 `keychain`을 삭제해줘야만 한다.
 
 ## keychain 삭제
 

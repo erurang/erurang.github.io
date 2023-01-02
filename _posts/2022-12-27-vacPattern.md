@@ -37,7 +37,7 @@ Home.tsx
 function Home() {
 	const [cnt,setCnt] = useState(0)
 
-	return <div>안녕하세요. 저는 마크업 개발자입니다. 저 말고 {cnt}명이 더있습니다.</div>
+	return <div>안녕하세요. 저는 마크업 개발자입니다. 우리 팀은 {cnt}명 있습니다.</div>
 }
 ```
 

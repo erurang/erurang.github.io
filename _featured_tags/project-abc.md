@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: ABC Wallet
-slug: abcwallet
+title: Wallet
+slug: wallet
 category: project
 menu: false
 order: 3
